@@ -1,0 +1,6 @@
+{
+  "name": "today-todo",
+  "version": "0.1.0",
+  "description": "오늘 일정·할 일을 패널로 상시 표시하고, ON/OFF 토글과 나챗방 전송 버튼을 제공한다",
+  "types": "./types/index.d.ts"
+}
