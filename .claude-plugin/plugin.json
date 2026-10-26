@@ -1,0 +1,6 @@
+{
+  "name": "schedule-planner",
+  "version": "0.1.0",
+  "description": "자연어로 일정·할 일을 등록하고, 날씨·공휴일·빈 시간을 고려해 하루를 배치해 주는 일정 플래너",
+  "author": { "name": "Woori" }
+}

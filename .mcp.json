@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "planner": {
+      "command": "C:\\Users\\Woori\\anaconda3\\envs\\py311\\python.exe",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/server/planner_server.py"]
+    }
+  }
+}
