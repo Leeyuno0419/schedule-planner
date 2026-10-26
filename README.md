@@ -29,11 +29,12 @@ claude --plugin-dir C:\Users\Woori\Desktop\wori\schedule-planner
 | ![톡캘린더](images/calendar.png) | ![나챗방 브리핑](images/chat-briefing.png) |
 
 ## 요구사항
-- Python 3.11 + `mcp` (`.mcp.json`의 `command`는 conda `py311` 경로로 고정됨 — 환경이 다르면 수정)
+- Python 3.10 이상 + `pip install -r requirements.txt` (`mcp==2.3.0`)
 - Node.js (훅)
+- 플러그인 설정 `python_path`: 위 조건을 만족하는 Python 실행 파일 경로. 기본값은 `python`이며, PATH의 `python`이 3.10 미만이거나 `mcp`가 없으면 직접 지정하세요(예: `C:\Users\Woori\anaconda3\envs\py311\python.exe`).
 
 ## 테스트
 ```powershell
 sh tests/test_hook.sh
-python -m pytest tests/test_server.py
+<python_path> -m pytest tests/test_server.py   # pytest는 별도 설치 필요
 ```

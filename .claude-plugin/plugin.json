@@ -2,5 +2,13 @@
   "name": "schedule-planner",
   "version": "0.1.0",
   "description": "자연어로 일정·할 일을 등록하고, 날씨·공휴일·빈 시간을 고려해 하루를 배치해 주는 일정 플래너",
-  "author": { "name": "Woori" }
+  "author": { "name": "Woori" },
+  "userConfig": {
+    "python_path": {
+      "type": "string",
+      "title": "Python 경로",
+      "description": "Python 3.10 이상이면서 mcp(requirements.txt)가 설치된 실행 파일 경로",
+      "default": "python"
+    }
+  }
 }

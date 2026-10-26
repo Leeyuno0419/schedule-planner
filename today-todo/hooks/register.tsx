@@ -159,6 +159,11 @@ export const register: Register = on => {
     const room = Math.max(1, (e.viewport?.rows ?? 24) - 5)
 
     const send = async () => {
+      // An empty or failed load must not go out as "nothing to do".
+      if (!today || list.some(line => line.kind === 'error')) {
+        $.ui.toast('불러오기에 실패했거나 아직 불러오지 않아 전송하지 않았습니다')
+        return
+      }
       const result = await $.mcp.call(SERVER, 'KakaotalkChat-MemoChat', {
         message: toMessage(today, list),
       })
